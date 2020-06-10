@@ -19,7 +19,7 @@ This is my experimental web browser, aimed at fixing all the flaws (I perceived)
 
 ### Browser heterogeneity wastes developer time and causes bugs
 
-• With many users using antiquated or unusual/annoying browsers (cf. Internet Explorer), developers have to spend a great deal of time polyfilling their code and [thinking about compatibility](https://caniuse.com/).
+- With many users using antiquated or unusual/annoying browsers (cf. Internet Explorer), developers have to spend a great deal of time polyfilling their code and [thinking about compatibility](https://caniuse.com/).
 
 ### CSS 
 
@@ -37,25 +37,25 @@ It's not immediately apparently how various element types will lay out their chi
 
 HTML is hamstrung without JavaScript. However, an increasing number of users don't want to support JavaScript because of privacy concerns. These are some limitations of HTML when JS is disabled.
 
-• HTML requires JS in order to support lots of UI functionality. 
+- HTML requires JS in order to support lots of UI functionality. 
 
-• HTML requires JS in order to process and send complicated forms: e.g. fields in a pure HTML form are sent form-encoded, which makes it hard to represent e.g. array or map data structures in forms.
+- HTML requires JS in order to process and send complicated forms: e.g. fields in a pure HTML form are sent form-encoded, which makes it hard to represent e.g. array or map data structures in forms.
 
-• HTML cannot send PUT or DELETE requests without resorting to JavaScript, which undercuts the purpose of REST and forces developers to use awkward hacks that mean the browser can't correctly judge e.g. the idempotency of a request.
+- HTML cannot send PUT or DELETE requests without resorting to JavaScript, which undercuts the purpose of REST and forces developers to use awkward hacks that mean the browser can't correctly judge e.g. the idempotency of a request.
 
-• Errors returned from HTML POST forms have no standard way of being rendered. You can render the `Referrer` with an error parameter in the query string, but what about all the other parameters required to load the page.
+- Errors returned from HTML POST forms have no standard way of being rendered. You can render the `Referrer` with an error parameter in the query string, but what about all the other parameters required to load the page.
 
-• GETs, in spite of the HTML RFC, do often have side effects (and this is sometimes desirable, such as when you want to count the number of loads on a page). This means browser vendors are [often hesitant to pre-fetch](https://en.wikipedia.org/wiki/Link_prefetching#Browser_support) and will only do so under certain circumstances, leading to a slower experience for the user.
+- GETs, in spite of the HTML RFC, do often have side effects (and this is sometimes desirable, such as when you want to count the number of loads on a page). This means browser vendors are [often hesitant to pre-fetch](https://en.wikipedia.org/wiki/Link_prefetching#Browser_support) and will only do so under certain circumstances, leading to a slower experience for the user.
 
 ### JavaScript
 
-• JavaScript, although the established language of web (all others, save WebAssembly, compile to it), is [widely hated](https://news.ycombinator.com/item?id=20807953) for its inconsistent and unintuitive semantics.
+- JavaScript, although the established language of web (all others, save WebAssembly, compile to it), is [widely hated](https://news.ycombinator.com/item?id=20807953) for its inconsistent and unintuitive semantics.
 
-• The wide use of **third-party** JavaScript (i.e. scripts requested by a site from another domain) opens the door for vulnerabilities such as XSS. JavaScript has no fine-grained control system preventing certain dependencies from doing dangerous actions like reading sensitive data from DOM elements and making network calls.
+- The wide use of **third-party** JavaScript (i.e. scripts requested by a site from another domain) opens the door for vulnerabilities such as XSS. JavaScript has no fine-grained control system preventing certain dependencies from doing dangerous actions like reading sensitive data from DOM elements and making network calls.
 
 In short, the current situation with JavaScript is a bit like if you had to choose between leaving your door open all the time or closed all the time. Leaving it open means allowing a wide range of shocking and [shockingly easy vulnerabilities](https://medium.com/hackernoon/im-harvesting-credit-card-numbers-and-passwords-from-your-site-here-s-how-9a8cb347c5b5), many of them supply chain vulnerabilities, and which can be achieved in spite of a developer's best efforts in setting a sensible CSP etc.
 
-• The script loading process is badly implemented. It may be that script A and B can load right away, but script C depends on script A, and then script D depends on script A. The developer will want to minimise page load time, especially if the scripts are large and/or critical, but HTML offers no way of expressing this kind of dependency graph.
+- The script loading process is badly implemented. It may be that script A and B can load right away, but script C depends on script A, and then script D depends on script A. The developer will want to minimise page load time, especially if the scripts are large and/or critical, but HTML offers no way of expressing this kind of dependency graph.
 
 ## The happy future*
 
