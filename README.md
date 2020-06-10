@@ -96,4 +96,4 @@ HTML does not have a rich range of elements for interactions like two-way video 
 It should be possible to install a plugin to your browser, written by e.g. [Stripe](https://stripe.com/gb?utm_campaign=paid_brand-UK_en_Search_Brand_Stripe-2032860449&utm_medium=cpc&utm_source=google&ad_content=355351450259&utm_term=stripe&utm_matchtype=e&utm_adposition=&utm_device=c&gclid=EAIaIQobChMIg4Tb16v36QIV2O3tCh3u6wouEAAYASAAEgLb6vD_BwE). Such plugins would allow persistent (or configurable-duration) authentication and mean users can pay and perform other actions across the web without needing to be ping-ponged between different sites.
 
 
-* OK, I stole this phrase from my days at [Monzo](https://monzo.com/).
+\* OK, I stole this phrase from my days at [Monzo](https://monzo.com/).
